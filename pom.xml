@@ -4,7 +4,7 @@
 
 	<groupId>core</groupId>
 	<artifactId>XML_Parsing</artifactId>
-	<version>1.3_SAXParser</version>
+	<version>1.4_StAXParser</version>
 	<packaging>jar</packaging>
 
 	<name>XML_Parsing</name>
@@ -36,7 +36,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>core.SAXParser_Dima</mainClass>
+							<mainClass>core.StAXParser</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
