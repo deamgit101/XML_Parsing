@@ -4,7 +4,7 @@
 
 	<groupId>core</groupId>
 	<artifactId>XML_Parsing</artifactId>
-	<version>1.2</version>
+	<version>1.3_SAXParser</version>
 	<packaging>jar</packaging>
 
 	<name>XML_Parsing</name>
@@ -36,7 +36,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>core.DOMXPathParser</mainClass>
+							<mainClass>core.SAXParser_Dima</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
