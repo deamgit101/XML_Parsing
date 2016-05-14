@@ -4,7 +4,7 @@
 
 	<groupId>core</groupId>
 	<artifactId>XML_Parsing</artifactId>
-	<version>1.1</version>
+	<version>1.2</version>
 	<packaging>jar</packaging>
 
 	<name>XML_Parsing</name>
@@ -36,7 +36,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>core.DOMParser</mainClass>
+							<mainClass>core.DOMXPathParser</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
