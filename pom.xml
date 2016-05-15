@@ -4,7 +4,7 @@
 
 	<groupId>core</groupId>
 	<artifactId>XML_Parsing</artifactId>
-	<version>1.4_StAXParser</version>
+	<version>1.5_My_debugging</version>
 	<packaging>jar</packaging>
 
 	<name>XML_Parsing</name>
@@ -21,11 +21,11 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+<!-- 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>2.52.0</version>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 	<build>
 		<plugins>
@@ -36,7 +36,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>core.StAXParser</mainClass>
+							<mainClass>core.DOMParser</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>

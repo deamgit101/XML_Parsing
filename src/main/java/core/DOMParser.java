@@ -34,17 +34,36 @@ public class DOMParser {
 
 		// Load and Parse the XML document contains the complete XML as a Tree.
 		Document doc = b.parse(url);
+		
+		System.out.println("doc = b.parse(url): " + doc);
 
 		// Optional
 		doc.getDocumentElement().normalize();
 
 		// Parsing elements
 		NodeList nList = doc.getElementsByTagName(node);
-
+		
+		// My debugging start
+		System.out.println("Node.ELEMENT_NODE: " + Node.ELEMENT_NODE);
+		System.out.println("nList.getLength: " + nList.getLength());		
+				System.out.println("++++++++++++++++++++++++++++++++++++++");
+				System.out.println("++++++++++++++++++++++++++++++++++++++");
+		System.out.println("nList: " + nList);
+				System.out.println("++++++++++++++++++++++++++++++++++++++");
+				System.out.println("++++++++++++++++++++++++++++++++++++++");
+		// My debugging end		
 		for (int i = 0; i < nList.getLength(); i++) {
 			Node nNode = nList.item(i);
+	//=====================================================================		
+			System.out.println("nList.item("+i+"): " + nList.item(i));			
+	//=====================================================================		
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 				Element eElement = (Element) nNode;
+		//=====================================================================		
+				System.out.println("eElement: " + eElement);			
+		//=====================================================================						
+				
+				
 				System.out.println("Key Word: "
 					+ eElement.getElementsByTagName(element_01).item(0)
 						.getChildNodes().item(0).getNodeValue());
